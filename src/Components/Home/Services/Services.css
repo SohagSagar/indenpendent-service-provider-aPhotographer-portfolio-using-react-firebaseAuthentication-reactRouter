@@ -1,0 +1,29 @@
+.service-section{
+    background-color: #eeeded;
+    font-family: 'Merriweather', serif;
+    padding-bottom: 50px;
+}
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px 10px;
+    
+}
+.service-card img{
+    width: 80px;
+}
+.service-card{
+    width: 300px !important;
+    padding: 20px;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.service-card p{
+    font-size: 1.1em;
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 0;
+}

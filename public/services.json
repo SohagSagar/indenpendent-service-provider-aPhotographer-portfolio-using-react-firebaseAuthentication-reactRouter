@@ -1,0 +1,37 @@
+[
+    {
+      "id": "1",
+      "price": "1,337.58",
+      "picture": "https://i.ibb.co/MSQ3h2p/camera.png",
+      "service_name": "Photography",
+      "description": "his service has differnt section like portrait,wedding,birthday etc. This service usually deliver 100 images."
+    },
+    {
+      "id": "2",
+      "price": "1,455",
+      "picture": "https://i.ibb.co/Bn7L1zx/video-camera.png",
+      "service_name": "Cinematography",
+      "description": "This service is commited to client to give a program thailer and a full program video with HD quality."
+    },
+    {
+      "id": "3",
+      "price": "1,383",
+      "picture": "https://i.ibb.co/1mJVJQF/retouch.png",
+      "service_name": "Photo Retouhcing",
+      "description": "This is a service where customer can give their image file for editing and also resize them for printing."
+    },
+    {
+      "id": "4",
+      "price": "1,221",
+      "picture": "https://i.ibb.co/xmpN1vk/camera-drone.png",
+      "service_name": "Aerial Photography",
+      "description": "Aerial Photography is basically a drone photography. The footage can capture high defination videos."
+    },
+    {
+      "id": "5",
+      "price": "1,489",
+      "picture": "https://i.ibb.co/SdDcY6J/diamond.png",
+      "service_name": "Wedding Photography",
+      "description": "In wedding program we are commited to deliver 100 edited images with Promo video."
+    }
+  ]
