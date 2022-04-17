@@ -1,0 +1,63 @@
+.about-short{
+    background-color:#1B1B1B ;
+    
+}
+.section-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    color: #FFFFFF;
+}
+
+.about-short-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0;
+    
+}
+.description{
+    width: 550px;
+}
+.description p,h6,h3{
+    color: #999999;
+}
+.description h6{
+    line-height: 1.6;
+}
+.hr-line{
+    color: #999999;
+    
+}
+.tic-icon{
+    font-size: 1.3em;
+    margin-right: 5px;
+}
+.about-short-photo img{
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: rgba(34, 34, 36, 0.76) 0px 7px 29px 0px;
+}
+
+.commom-btn button{
+    border-radius: 50px !important ;
+    padding: 10px 20px !important;
+    border: 2px solid #FFFFFF !important;
+    background-color: transparent !important;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600 !important;
+    margin: 0 auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+    
+    
+}
+.commom-btn button:hover{
+    background-color: #FFFFFF !important;
+    border: 2px solid #FFFFFF !important;
+    transition: 0.2s ease-in;
+    color: black !important;
+}
