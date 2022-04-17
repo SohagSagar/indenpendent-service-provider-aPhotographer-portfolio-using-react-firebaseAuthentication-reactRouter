@@ -1,0 +1,13 @@
+.btn-style{
+    border-radius: 50px !important ;
+    padding: 10px 20px !important;
+    border: 2px solid #D82E2F !important;
+    background-color: transparent !important;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600 !important;
+}
+.btn-style:hover{
+    background-color: #bb3434 !important;
+    border: 2px solid #D82E2F !important;
+    transition: 0.2s ease-in;
+}
