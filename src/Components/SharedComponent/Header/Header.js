@@ -30,7 +30,9 @@ const Header = () => {
                             <CustomLink to={'./about-me-details'}>About Me</CustomLink>
                             <CustomLink to={'./packages'}>Package's</CustomLink>
                             <CustomLink to={'./gallery'}>Gallery</CustomLink>
-                            <CustomLink to={'./frequenty-asked-questions'}>FAQ</CustomLink>
+                            <CustomLink to={'./check-out'}>Check-Out</CustomLink>
+                            <CustomLink to={'./blogs'}>Blogs</CustomLink>
+                            {/* <CustomLink to={'./frequenty-asked-questions'}>FAQ</CustomLink> */}
                             <CustomLink to={'./contract'}>Contract</CustomLink>
                             {
                                user ?  <CustomLink to={'./logout'}>Logout</CustomLink>

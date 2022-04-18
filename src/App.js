@@ -12,6 +12,9 @@ import Home from './Components/Home/Home/Home';
 import Login from './Components/NavComponents/Login/Login';
 import Register from './Components/NavComponents/Register/Register';
 import Logout from './Components/NavComponents/Logout/Logout';
+import CheckOut from './Components/NavComponents/CheckOut/CheckOut';
+import RequireAuth from './Utilities/RequireAuth/RequireAuth';
+import Blogs from './Components/NavComponents/Blogs/Blogs';
 
  
 
@@ -28,7 +31,13 @@ function App() {
           <Route path='/about-me-details' element={<AboutMeDetails/>}></Route>
           <Route path='/packages' element={<Packages/>}></Route>
           <Route path='/gallery' element={<Gallery/>}></Route>
-          <Route path='/frequenty-asked-questions' element={<FAQ/>}></Route>
+          <Route path='/check-out' element={
+            <RequireAuth>
+              <CheckOut/>
+            </RequireAuth>
+          }></Route>
+          {/* <Route path='/frequenty-asked-questions' element={<FAQ/>}></Route> */}
+          <Route path='/blogs' element={<Blogs/>}></Route>
           <Route path='/contract' element={<Contract/>}></Route>
           <Route path='/login' element={<Login/>}></Route>
           <Route path='/register' element={<Register/>}></Route>
