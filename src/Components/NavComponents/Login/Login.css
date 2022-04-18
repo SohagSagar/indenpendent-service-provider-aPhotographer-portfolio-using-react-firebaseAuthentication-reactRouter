@@ -1,0 +1,116 @@
+.form-container {
+    /* border: 1px solid black; */
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 40px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.form-styling {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-styling input {
+    width: 350px;
+    border-radius: 5px;
+    /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+    height: 50px;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+input:focus {
+    outline: none;
+
+}
+
+.form-control:focus {
+    background-color: #fff;
+    border-color: #8C8F91 !important;
+    box-shadow: none !important;
+}
+
+
+
+/* CSS */
+.button-39 {
+    background-color: #FFFFFF;
+    border: 1px solid rgb(209, 213, 219);
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #111827;
+    font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: .75rem 1rem;
+    color: rgb(22, 22, 22);
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 350px;
+    background-color: #8C8F91;
+    color: whitesmoke;
+
+}
+
+.button-39:hover {
+    background-color: #636566;
+}
+
+.button-39:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.button-39:focus-visible {
+    box-shadow: none;
+}
+
+.hr-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.hr {
+    width: 155px;
+}
+.login-methods{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px ;
+    cursor: pointer;
+}
+.login-container:hover{
+    background-color: #8C8F91;
+    color: whitesmoke;
+    transition: 0.4s ease;
+}
+.login-methods p{
+    font-size: 1em;
+    text-align: center;
+}
+.login-container{
+    width: 350px;
+    padding: 5px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.login-container img{
+    width: 15px;
+}

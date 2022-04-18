@@ -4,6 +4,7 @@ import { FaFacebookSquare } from 'react-icons/fa';
 import { AiFillInstagram } from 'react-icons/ai';
 import { IoLogoLinkedin } from 'react-icons/io';
 import { IoLogoYoutube } from 'react-icons/io';
+import { AiOutlineCopyrightCircle } from 'react-icons/ai';
 
 import 'tippy.js/dist/tippy.css';
 
@@ -33,8 +34,7 @@ const Footer = () => {
                     <IoLogoLinkedin className=' footer-icon' />
                     <IoLogoYoutube className=' footer-icon' />
                 </div>
-                <p className='copy-right mt-2'>All Right Reserved &copy John Photography {year} </p>
-
+                <p className='copy-right mt-2'>All Right Reserved <AiOutlineCopyrightCircle/> John Photography {year} </p>
 
             </div>
 
