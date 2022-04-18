@@ -1,0 +1,14 @@
+.customer-review-section{
+    background-color:#1B1B1B ;
+    padding-bottom: 20px;
+}
+.all-reviews{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+
+}

@@ -33,5 +33,13 @@
       "picture": "https://i.ibb.co/SdDcY6J/diamond.png",
       "service_name": "Wedding Photography",
       "description": "In wedding program we are commited to deliver 100 edited images with Promo video."
+    },
+    {
+      "id": "6",
+      "price": "1,089",
+      "picture": "https://i.ibb.co/N6WjrH2/birthday-cake.png",
+      "service_name": "Birthday Photography",
+      "description": "We cover any kind of birthday program and usually deliver 50 edited image with a promo video."
     }
+    
   ]
