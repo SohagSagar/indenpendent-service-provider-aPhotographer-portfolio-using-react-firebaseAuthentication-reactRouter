@@ -1,24 +1,31 @@
 import React, { useState } from 'react';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../Utilities/firebase.init';
+
 
 
 import './Login.css'
 
 const Login = () => {
-    const navigate =useNavigate();
-
+    const navigate = useNavigate();
+    
+    //sign in with email and password//
     const [
         signInWithEmailAndPassword,
         user,
         loading,
         error,
-      ] = useSignInWithEmailAndPassword(auth);
+    ] = useSignInWithEmailAndPassword(auth);
     
+    // sign in with google sign in method//
+        const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
+    
+    
+
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [message,setMessage] = useState('');
+    const [message, setMessage] = useState('');
 
     const getEmail = event => {
         const email = event.target.value;
@@ -32,12 +39,12 @@ const Login = () => {
 
     const submitLogin = (event) => {
         event.preventDefault();
-        signInWithEmailAndPassword(email,password);
+        signInWithEmailAndPassword(email, password);
     }
-    if(user){
+    if (user) {
         navigate('/home');
     }
-    if(error){
+    if (error) {
         console.log(error);
     }
 
@@ -49,7 +56,7 @@ const Login = () => {
 
         <div className='form-container'>
             <h5 className='text-center mb-4'>Please Login !!</h5><hr />
-            
+
             <form onSubmit={submitLogin} className='form-styling'>
                 <input onBlur={getEmail} className='form-control' type="email" name="Your Email" id="" placeholder='Your Email' required />
                 <input onBlur={getPassword} className='form-control' type="password" name="Your Password" id="" placeholder='Your Password' required /><br />
@@ -62,7 +69,7 @@ const Login = () => {
                 <hr className='hr' />
             </div>
 
-            <div className="login-methods">
+            <div onClick={()=>signInWithGoogle()} className="login-methods">
                 <div className="login-container">
                     <p>Continue with <img src="./google.png" alt="" /> Google</p>
                 </div>
