@@ -71,3 +71,24 @@
     
 }
 
+
+@media screen and (max-width:576px){
+    .subscribe-section{
+        flex-direction: column;
+    }
+    .subscribe-form  input{
+        
+        width: 250px;
+        height: 40px;
+    }
+    .subscribe-form button{
+        
+        height: 40px;
+        width: 100px;
+        font-size: 1.1em;
+    }
+    .copy-right{
+        font-size: 0.8em;
+    }
+}
+

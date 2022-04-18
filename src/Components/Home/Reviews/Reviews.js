@@ -18,7 +18,7 @@ const Reviews = () => {
                 <div className='all-reviews'>
                     {
                         reviews ?
-                            reviews.slice(0, 9).map(review => <Review key={review.id} review={review}></Review>)
+                            reviews.slice(0, 6).map(review => <Review key={review.id} review={review}></Review>)
                             : <Spinner animation="border" role="status">
                                 <span className="visually-hidden">Loading...</span>
                             </Spinner>

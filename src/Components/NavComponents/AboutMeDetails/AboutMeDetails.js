@@ -1,9 +1,12 @@
 import React from 'react';
+import AboutMeShort from '../../Home/AboutMeShort/AboutMeShort';
+import Footer from '../../SharedComponent/Footer/Footer';
 
 const AboutMeDetails = () => {
     return (
         <div>
-            <p>about me details</p>
+            <AboutMeShort/>
+            <Footer/>
         </div>
     );
 };

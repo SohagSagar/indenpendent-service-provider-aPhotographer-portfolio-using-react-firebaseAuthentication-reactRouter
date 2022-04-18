@@ -5,9 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 import AboutMeDetails from './Components/NavComponents/AboutMeDetails/AboutMeDetails';
 import Packages from './Components/NavComponents/Packages/Packages';
 import Gallery from './Components/NavComponents/Gallery/Gallery';
-import FAQ from './Components/NavComponents/FAQ/FAQ';
 import Contract from './Components/NavComponents/Contract/Contract';
-import NoPageFound from './Utilities/NoPageFound/NoPageFound';
 import Home from './Components/Home/Home/Home';
 import Login from './Components/NavComponents/Login/Login';
 import Register from './Components/NavComponents/Register/Register';
@@ -15,6 +13,7 @@ import Logout from './Components/NavComponents/Logout/Logout';
 import CheckOut from './Components/NavComponents/CheckOut/CheckOut';
 import RequireAuth from './Utilities/RequireAuth/RequireAuth';
 import Blogs from './Components/NavComponents/Blogs/Blogs';
+import PageNotFound from './Utilities/PageNotFound/PageNotFound';
 
  
 
@@ -43,7 +42,7 @@ function App() {
           <Route path='/register' element={<Register/>}></Route>
           <Route path='/logout' element={<Logout/>}></Route>
 
-          <Route path='*' element={<NoPageFound/>}></Route>
+          <Route path='*' element={<PageNotFound/>}></Route>
 
       </Routes>
     </div>

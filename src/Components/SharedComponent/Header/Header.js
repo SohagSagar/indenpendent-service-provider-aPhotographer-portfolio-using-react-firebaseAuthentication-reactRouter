@@ -15,16 +15,16 @@ const Header = () => {
             <Navbar bg="light" expand="lg">
                 <Container>
                     <Navbar.Brand className='d-flex align-items-center' href="#home">
-                        <img alt=""src={logo} width="100" height="45" className="d-inline-block align-top"
+                        <img alt="" src={logo} width="100" height="45" className="d-inline-block align-top"
                         />
-                        
-                        
+
+
                     </Navbar.Brand>
 
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end align-items-center">
                         <Nav className='menu-links'>
-                            
+
 
                             <CustomLink to={'./'}>Home</CustomLink>
                             <CustomLink to={'./about-me-details'}>About Me</CustomLink>
@@ -32,14 +32,13 @@ const Header = () => {
                             <CustomLink to={'./gallery'}>Gallery</CustomLink>
                             <CustomLink to={'./check-out'}>Check-Out</CustomLink>
                             <CustomLink to={'./blogs'}>Blogs</CustomLink>
-                            {/* <CustomLink to={'./frequenty-asked-questions'}>FAQ</CustomLink> */}
                             <CustomLink to={'./contract'}>Contract</CustomLink>
                             {
-                               user ?  <CustomLink to={'./logout'}>Logout</CustomLink>
-                               : <CustomLink to={'./login'}>Login</CustomLink>
+                                user ? <CustomLink to={'./logout'}>Logout</CustomLink>
+                                    : <CustomLink to={'./login'}>Login</CustomLink>
                             }
                         </Nav>
-                        
+
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

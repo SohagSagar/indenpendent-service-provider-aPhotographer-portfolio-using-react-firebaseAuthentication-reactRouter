@@ -62,3 +62,22 @@
     transition: 0.2s ease-in;
     color: black !important;
 }
+
+
+
+/* responsive for movbile devices */
+
+@media screen and (max-width:576px) {
+    .about-short-inner{
+        flex-direction: column; 
+        padding: 40px 0;
+    }
+
+    .description{
+        width: 350px;
+    }
+    .about-short-photo img{
+        width: 350px;
+        margin-top: 10px;
+    }
+}
