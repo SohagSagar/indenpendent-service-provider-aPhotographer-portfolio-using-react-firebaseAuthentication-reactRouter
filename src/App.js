@@ -11,6 +11,7 @@ import NoPageFound from './Utilities/NoPageFound/NoPageFound';
 import Home from './Components/Home/Home/Home';
 import Login from './Components/NavComponents/Login/Login';
 import Register from './Components/NavComponents/Register/Register';
+import Logout from './Components/NavComponents/Logout/Logout';
 
  
 
@@ -23,6 +24,7 @@ function App() {
 
           
           <Route path='/' element={<Home/>}></Route>
+          <Route path='/home' element={<Home/>}></Route>
           <Route path='/about-me-details' element={<AboutMeDetails/>}></Route>
           <Route path='/packages' element={<Packages/>}></Route>
           <Route path='/gallery' element={<Gallery/>}></Route>
@@ -30,6 +32,8 @@ function App() {
           <Route path='/contract' element={<Contract/>}></Route>
           <Route path='/login' element={<Login/>}></Route>
           <Route path='/register' element={<Register/>}></Route>
+          <Route path='/logout' element={<Logout/>}></Route>
+
           <Route path='*' element={<NoPageFound/>}></Route>
 
       </Routes>

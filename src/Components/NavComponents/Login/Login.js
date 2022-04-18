@@ -1,11 +1,20 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { Link, useNavigate } from 'react-router-dom';
+import auth from '../../../Utilities/firebase.init';
 
 
 import './Login.css'
 
 const Login = () => {
+    const navigate =useNavigate();
 
+    const [
+        signInWithEmailAndPassword,
+        user,
+        loading,
+        error,
+      ] = useSignInWithEmailAndPassword(auth);
     
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -23,7 +32,13 @@ const Login = () => {
 
     const submitLogin = (event) => {
         event.preventDefault();
-        
+        signInWithEmailAndPassword(email,password);
+    }
+    if(user){
+        navigate('/home');
+    }
+    if(error){
+        console.log(error);
     }
 
 

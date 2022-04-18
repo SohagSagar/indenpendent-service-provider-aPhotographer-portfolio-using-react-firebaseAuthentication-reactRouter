@@ -1,10 +1,13 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import logo from '../../../resources/logo/logo.png'
 import CustomLink from '../../../Utilities/CustomLink/CustomLink';
+import auth from '../../../Utilities/firebase.init';
 import './Header.css'
 
 const Header = () => {
+    const [user] = useAuthState(auth);
     return (
         <div>
             {/* <p>this is header page</p> */}
@@ -29,7 +32,10 @@ const Header = () => {
                             <CustomLink to={'./gallery'}>Gallery</CustomLink>
                             <CustomLink to={'./frequenty-asked-questions'}>FAQ</CustomLink>
                             <CustomLink to={'./contract'}>Contract</CustomLink>
-                            <CustomLink to={'./login'}>Login</CustomLink>
+                            {
+                               user ?  <CustomLink to={'./logout'}>Logout</CustomLink>
+                               : <CustomLink to={'./login'}>Login</CustomLink>
+                            }
                         </Nav>
                         
                     </Navbar.Collapse>
