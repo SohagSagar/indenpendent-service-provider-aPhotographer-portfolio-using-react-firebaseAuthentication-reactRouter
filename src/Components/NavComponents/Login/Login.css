@@ -114,3 +114,39 @@ input:focus {
 .login-container img{
     width: 15px;
 }
+
+.reset-password-btn{
+    color: #0A87E5;
+    cursor: pointer;
+}
+
+
+/* modal css */
+.forgot-pass-section img {
+    width: 150px;
+}
+
+.forgot-pass-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.forgot-pass-section h5{
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.forgot-pass-section input {
+    width: 270px;
+}
+
+.forgot-pass-section button {
+    width: 270px;
+}
+.reset-password-heading{
+    text-align: center;
+    padding: 10px;
+    line-height: 0;
+    margin-bottom: 0;
+}

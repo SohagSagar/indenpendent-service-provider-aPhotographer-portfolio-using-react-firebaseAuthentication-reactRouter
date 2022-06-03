@@ -1,3 +1,20 @@
+# Project Name: John's photography
+# live site: 
+## Project Descriptions:
+- This a indivisual person website 
+- This website feature a photographer activities
+- A user can find different type of services from the website
+- A user should be login before access for booking menu
+- A new user can register if he is new in the website
+
+# Technology:
+- react firebase to authentication
+- react router
+- react boostrap
+- react icons
+- react toast
+- css
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

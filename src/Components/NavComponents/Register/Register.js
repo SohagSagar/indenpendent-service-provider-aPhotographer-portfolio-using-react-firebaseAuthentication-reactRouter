@@ -1,10 +1,12 @@
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Register.css'
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../Utilities/firebase.init';
 import Footer from '../../SharedComponent/Footer/Footer';
+import { toast } from 'react-toastify';
+import Loading from '../../SharedComponent/Loading/Loading';
 
 const Register = () => {
 
@@ -19,7 +21,7 @@ const Register = () => {
     const [userName, setUserName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [message, setMessage] = useState('');
+ 
 
     const handleRegister = (event) => {
         event.preventDefault();
@@ -41,6 +43,38 @@ const Register = () => {
         setPassword(password);
     }
 
+    useEffect(() => {
+        if (user) {
+            toast.success("Registration Successful !!", {
+                position: toast.POSITION.TOP_RIGHT
+            });
+        }
+    }, [user])
+
+    useEffect(()=>{
+        if(error){
+            switch (error?.code) {
+                case 'auth/email-already-exists':
+                    toast.error("Email is Already Registered !!", {
+                        position: toast.POSITION.TOP_RIGHT
+                    });
+                    break;
+            
+                default:
+                    toast.error({error}+ '!!', {
+                        position: toast.POSITION.TOP_RIGHT
+                    });
+                    break;
+            }
+        
+        }
+    },[error]);
+
+    if(loading){
+        return <Loading/>
+    }
+
+
 
     return (
         <div>
@@ -60,7 +94,7 @@ const Register = () => {
                 <p className='mt-2 text-center'>Already Have an Account? <span className=''><Link to='/login'>Please Login</Link></span></p>
 
             </div>
-            <Footer/>
+            <Footer />
         </div>
     );
 };

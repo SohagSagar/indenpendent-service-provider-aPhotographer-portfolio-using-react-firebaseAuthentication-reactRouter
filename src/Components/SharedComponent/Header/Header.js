@@ -28,11 +28,11 @@ const Header = () => {
 
                             <CustomLink to={'./'}>Home</CustomLink>
                             <CustomLink to={'./about-me-details'}>About Me</CustomLink>
-                            <CustomLink to={'./packages'}>Package's</CustomLink>
-                            <CustomLink to={'./gallery'}>Gallery</CustomLink>
+                            {/* <CustomLink to={'./packages'}>Package's</CustomLink> */}
+                            {/* <CustomLink to={'./gallery'}>Gallery</CustomLink> */}
                             <CustomLink to={'./check-out'}>Check-Out</CustomLink>
                             <CustomLink to={'./blogs'}>Blogs</CustomLink>
-                            <CustomLink to={'./contract'}>Contract</CustomLink>
+                            {/* <CustomLink to={'./contract'}>Contract</CustomLink> */}
                             {
                                 user ? <CustomLink to={'./logout'}>Logout</CustomLink>
                                     : <CustomLink to={'./login'}>Login</CustomLink>

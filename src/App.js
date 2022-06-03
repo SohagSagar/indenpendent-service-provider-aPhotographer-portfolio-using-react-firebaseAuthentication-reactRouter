@@ -15,6 +15,9 @@ import RequireAuth from './Utilities/RequireAuth/RequireAuth';
 import Blogs from './Components/NavComponents/Blogs/Blogs';
 import PageNotFound from './Utilities/PageNotFound/PageNotFound';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
  
 
 
@@ -45,6 +48,7 @@ function App() {
           <Route path='*' element={<PageNotFound/>}></Route>
 
       </Routes>
+      <ToastContainer />
     </div>
   );
 }
